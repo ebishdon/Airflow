@@ -18,90 +18,96 @@
 
 <body>
     <header>
-        <nav class="relative w-full font-bold flex justify-between items-center px-28 p-7 shadow-xl">
+        <nav class="font-bold flex justify-between items-center px-28 p-7 shadow-xl">
             <div class="logo">
-                <img src="Logo.png" class="w-24" alt="">
+
+                <img src="./img/blogo.png" class="w-24" alt="" onclick="window.open('index.html', '_blank');">
             </div>
-            <ul class="flex gap-7">
-                <li class="hover:text-blue-600 hover:underline hover:decoration-2 hover:cursor-pointer hover:underline-offset-4">Home</li>
-                <li class="hover:text-blue-600 hover:underline hover:decoration-2 hover:cursor-pointer hover:underline-offset-4">Products</li>
-                <li class="hover:text-blue-600 hover:underline hover:decoration-2 hover:cursor-pointer hover:underline-offset-4">Cart</li>
-                <li class="hover:text-blue-600 hover:underline hover:decoration-2 hover:cursor-pointer hover:underline-offset-4">Payment</li>
+            <ul class="flex gap-4" href="index.html">
+
+                <a class="hover:text-blue-600 hover:underline hover:decoration-2 hover:cursor-pointer hover:underline-offset-4" href="index.html">Home</a>
+
             </ul>
         </nav>
-    </header>
-    <section class="flex items-center justify-center flex-col gap-12">
-        <h2 class="font-bold text-4xl ">Ecommerce Buy Page</h2>
-        <!-- <p>Resize the browser window to see the effect. When the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other.</p> -->
-        <div class="row">
-            <div class="col-75">
-                <div class="container">
-                    <form action="">
+        <section class="flex items-center justify-center flex-col gap-12">
+            <h2 class="font-bold text-4xl ">Buy Page</h2>
+            <!-- <p>Resize the browser window to see the effect. When the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other.</p> -->
+            <div class="row">
+                <div class="col-75">
+                    <div class="container">
+                        <form action="">
 
-                        <div class="row font-bold">
-                            <div class="col-50">
-                                <h3>Billing Address</h3>
-                                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                                <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-                                <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                                <input type="text" id="email" name="email" placeholder="john@example.com">
-                                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-                                <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-                                <label for="city"><i class="fa fa-institution"></i> City</label>
-                                <input type="text" id="city" name="city" placeholder="New York">
+                            <div class="row font-bold">
+                                <div class="col-50">
+                                    <h3>Billing Address</h3>
+                                    <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                                    <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                                    <input type="text" id="email" name="email" placeholder="john@example.com">
+                                    <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                                    <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                                    <label for="city"><i class="fa fa-institution"></i> City</label>
+                                    <input type="text" id="city" name="city" placeholder="New York">
 
-                                <div class="row">
-                                    <div class="col-50">
-                                        <label for="state">State</label>
-                                        <input type="text" id="state" name="state" placeholder="NY">
-                                    </div>
-                                    <div class="col-50">
-                                        <label for="zip">Zip</label>
-                                        <input type="text" id="zip" name="zip" placeholder="10001">
+                                    <div class="row">
+                                        <div class="col-50">
+                                            <label for="state">State</label>
+                                            <input type="text" id="state" name="state" placeholder="NY">
+                                        </div>
+                                        <br>
+                                        <div class="col-50">
+                                            <label for="zip">Zip</label>
+                                            <input type="text" id="zip" name="zip" placeholder="10001">
+                                        </div>
                                     </div>
                                 </div>
+                                <br>
+
+                                <div class="col-50 font-bold">
+                                    <h3>Payment</h3>
+                                    <br>
+                                    <label for="fname" class="font-bold">Accepted Cards</label>
+                                    <div class="icon-container">
+                                        <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                        <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                        <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                    </div>
+                                    <br>
+                                    <label for="cname">Name on Card</label>
+                                    <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                                    <label for="ccnum">Credit card number</label>
+                                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                                    <label for="expmonth">Exp Month</label>
+                                    <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                                    <br>
+                                    <div class="row">
+                                        <br>
+                                        <div class="col-50">
+                                            <label for="expyear">Exp Year</label>
+                                            <input type="text" id="expyear" name="expyear" placeholder="2018">
+                                        </div>
+                                        <br>
+                                        <div class="col-50">
+                                            <label for="cvv">CVV</label>
+                                            <input type="text" id="cvv" name="cvv" placeholder="352">
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
-
-                            <div class="col-50 font-bold">
-                                <h3>Payment</h3>
-                                <label for="fname" class="font-bold">Accepted Cards</label>
-                                <div class="icon-container">
-                                    <i class="fa fa-cc-visa" style="color:navy;"></i>
-                                    <i class="fa fa-cc-amex" style="color:blue;"></i>
-                                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                                    <i class="fa fa-cc-discover" style="color:orange;"></i>
-                                </div>
-                                <label for="cname">Name on Card</label>
-                                <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-                                <label for="ccnum">Credit card number</label>
-                                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-                                <label for="expmonth">Exp Month</label>
-                                <input type="text" id="expmonth" name="expmonth" placeholder="September">
-                                <div class="row">
-                                    <div class="col-50">
-                                        <label for="expyear">Exp Year</label>
-                                        <input type="text" id="expyear" name="expyear" placeholder="2018">
-                                    </div>
-                                    <div class="col-50">
-                                        <label for="cvv">CVV</label>
-                                        <input type="text" id="cvv" name="cvv" placeholder="352">
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <label>
+                            <label>
           <input type="checkbox" checked="checked" name="sameadr" > Shipping address same as billing
         </label>
-                        <button type="submit" value="" class="bg-blue-500 w-full p-5 text-xl font-bold text-white" onclick="creditValid()">Continue to checkout</button>
-                    </form>
+                            <button type="submit" value="" class="bg-blue-500 w-full p-5 text-xl font-bold text-white" onclick="creditValid()">Continue to checkout</button>
+                        </form>
+                    </div>
                 </div>
+
             </div>
 
-        </div>
-
-    </section>
-    <script src="index.js"></script>
+        </section>
+        <script src="index.js"></script>
 </body>
 
 </html>
