@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="font-bold flex justify-between items-center px-28 p-7 shadow-xl">
+            <div class="logo">
+                <img src="Logo.png" class="w-24" alt="">
+            </div>
+            <ul class="flex gap-4">
+                <li class="hover:text-blue-600 hover:underline hover:decoration-2 hover:cursor-pointer hover:underline-offset-4">Home</li>
+                <li class="hover:text-blue-600 hover:underline hover:decoration-2 hover:cursor-pointer hover:underline-offset-4">Products</li>
+                <li class="hover:text-blue-600 hover:underline hover:decoration-2 hover:cursor-pointer hover:underline-offset-4">Cart</li>
+                <li class="hover:text-blue-600 hover:underline hover:decoration-2 hover:cursor-pointer hover:underline-offset-4">Payment</li>
+            </ul>
+        </nav>
+    </header>
+    <section class="flex h-full p-10 items-center w-full justify-center">
+        <div class="login w-96 rounded">
+            <div class="bg-gray-200 flex-col  h-96 shadow-xl rounded-xl flex items-center justify-center">
+                <!-- <form class="flex  flex-col font-bold" action=""> -->
+                <div class="flex  flex-col font-bold p-5 gap-2">
+                    <label for="">Email</label>
+                    <input type="email" id="email" placeholder="Username/email" class="border w-full p-1 border-blue-600 border-3 rounded">
+                </div>
+                <div class="flex  flex-col font-bold p-5 gap-2">
+                    <label for="">Password</label>
+                    <input type="password" id="pass" placeholder="Password" class="border w-full p-1 border-blue-600 border-3 rounded">
+                </div>
+                <div class="flex items-center justify-center">
+                    <button class=" btn-login w-24 bg-blue-600 text-white rounded p-2" onclick="validate()">Submit</button>
+                </div>
+                <!-- </form> -->
+            </div>
+        </div>
+    </section>
+    <script src="login.js"></script>
+</body>
+
+</html>
