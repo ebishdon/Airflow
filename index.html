@@ -12,39 +12,71 @@
 </head>
 
 <body>
-    <header>
-        <nav class="font-bold flex justify-between items-center px-28 p-7 shadow-xl">
-            <div class="logo">
-                <img src="Logo.png" class="w-24" alt="">
-            </div>
-            <ul class="flex gap-4">
-                <li class="hover:text-blue-600 hover:underline hover:decoration-2 hover:cursor-pointer hover:underline-offset-4">Home</li>
-                <li class="hover:text-blue-600 hover:underline hover:decoration-2 hover:cursor-pointer hover:underline-offset-4">Products</li>
-                <li class="hover:text-blue-600 hover:underline hover:decoration-2 hover:cursor-pointer hover:underline-offset-4">Cart</li>
-                <li class="hover:text-blue-600 hover:underline hover:decoration-2 hover:cursor-pointer hover:underline-offset-4">Payment</li>
-            </ul>
-        </nav>
-    </header>
-    <section class="flex h-full p-10 items-center w-full justify-center">
-        <div class="login w-96 rounded">
-            <div class="bg-gray-200 flex-col  h-96 shadow-xl rounded-xl flex items-center justify-center">
-                <!-- <form class="flex  flex-col font-bold" action=""> -->
-                <div class="flex  flex-col font-bold p-5 gap-2">
-                    <label for="">Email</label>
-                    <input type="email" id="email" placeholder="Username/email" class="border w-full p-1 border-blue-600 border-3 rounded">
-                </div>
-                <div class="flex  flex-col font-bold p-5 gap-2">
-                    <label for="">Password</label>
-                    <input type="password" id="pass" placeholder="Password" class="border w-full p-1 border-blue-600 border-3 rounded">
-                </div>
-                <div class="flex items-center justify-center">
-                    <button class=" btn-login w-24 bg-blue-600 text-white rounded p-2" onclick="validate()">Submit</button>
-                </div>
-                <!-- </form> -->
-            </div>
-        </div>
-    </section>
-    <script src="login.js"></script>
-</body>
+    <!DOCTYPE html>
+    <html lang="en">
 
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ADVENTURE</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="im/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    </head>
+
+    <body>
+        <!--navbar-->
+        <nav class="navbar glass" style="height: 70px;">
+            <span style="padding-top: 45px;"><a href="#home"><img class="img2"src="https://drive.google.com/uc?export=view&id=18w44M_wq9TbQlwsK126yf8IAin4VxGiK" width="40"
+            style="margin: -25px -20px"><h1 class="logo">ADVENTURE</h1></a></span>
+            <ul class="nav-links">
+                <li><a href="#home" id="pri" class="active cir_border">Home</a></li>
+                <li><a href="#events" id="sec" class="cir_border">Tours</a></li>
+                <li><a href="#explore" id="tri" class="cir_border">Explore</a></li>
+                <li><a href="#about" id="quad" class="cir_border">About</a></li>
+                <li><a href="#contribution" id="quint" class="cir_border">Contributions</a></li>
+                <li><a href="#contact" id="hex" class="cir_border">Contact</a></li>
+                <li>
+                    <div>
+                        <input type="checkbox" class="checkbox dark" id="checkbox">
+                        <label for="checkbox" class="label">
+                <i class="fa fa-moon-o"></i>
+                <i class='fa fa-sun-o'></i>
+                <div class='ball'>
+              </label>
+                    </div>
+                </li>
+            </ul>
+            <img src="./img/menu-btn.png" alt="" class="menu-btn">
+        </nav>
+        <!--navbar-->
+
+        <header id="home">
+            <div class="header-content">
+                <h2 id="quote">Explore the colourful World</h2>
+                <div class="line"></div>
+                <h1>A WONDERFUL GIFT </h1>
+                <a href="#" class="ctn">Learn more</a>
+            </div>
+        </header>
+
+
+
+        <script>
+            const menuBtn = document.querySelector('.menu-btn')
+            const navlinks = document.querySelector('.nav-links')
+
+            menuBtn.addEventListener('click', () => {
+                navlinks.classList.toggle('mobile-menu')
+            })
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+
+    </html>
