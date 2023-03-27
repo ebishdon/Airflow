@@ -806,6 +806,8 @@ body.dark {
     background-repeat: no-repeat;
     background-size: 80%;
     animation: animate 8s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(239, 233, 233, 0);
 }
 
 @keyframes animate {
